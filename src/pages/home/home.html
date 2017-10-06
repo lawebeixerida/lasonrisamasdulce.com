@@ -1,14 +1,59 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+<ion-header  no-border>
+  <ion-navbar style=" padding: 20px; border-bottom: 1px solid #ccc;">
+    <!--<ion-title text-wrap class="item-text-wrap">-->
+      <div  style="font-size: 20px; padding:0px;">
+        <!--my❤️🍰.shop-->
+        <span style="color:#e8c060;">la</span><span style="color: #ea9078;">sonrisa</span><span style="color:#65c3ad">más</span><span style="color:#dc6b6b">dulce</span><span style="color:#ea9078">.com</span>
+      </div>
+    <!--</ion-title>-->
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content overflow-scroll=”true”>
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="slogan">
+        <h5>Para una sonrisa más dulce</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+            <ion-card (click)="showGallery('Cupcakes')" style="background-color:deepskyblue;">
+              <img src="assets/images/cupcake.gif"/>
+              <div class="card-title">Cupcakes</div>
+              <div class="card-subtitle">64 profiles</div>
+            </ion-card>
+          </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+          <ion-card (click)="showGallery('Cakes')">
+            <img src="assets/images/cake.gif"/>
+            <div class="card-title">Pasteles</div>
+            <div class="card-subtitle">3 profiles</div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card class="card-min">
+          <img width="111" src="assets/images/we.png"/>
+          <div class="card-title">Yo!</div>
+          <div class="card-subtitle">Hi. I'm Miriam</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card class="card-min">
+          <img src="assets/images/contact.gif"/>
+          <div class="card-title">Contacto</div>
+          <div class="card-subtitle">Say me hello!</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
